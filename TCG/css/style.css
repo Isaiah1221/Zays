@@ -1,0 +1,54 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:#89CFF0 ; 
+    color:#C284F6;
+  }
+   
+  h1{
+     text-shadow: 2px 2px black;  
+   }
+  
+  h3{
+    text-decoration: underline;
+  }
+  
+  img{
+    border-style:outset;
+   
+    
+  }
+  
+   table{
+     background-color: white;
+     color: #C284F6;
+   }
+  
+  .header{grid-area:header;}
+  .intexp{grid-area:intexp;}
+  .hobbies{grid-area:hobbies;}
+  .goals{grid-area:goals;}
+  .achievments{grid-area:achievments;}
+  .footer{grid-area:footer;}
+  
+  .body-grid{
+    display:grid;
+    grid-template-areas: 
+      'header header header header header header'
+      'intexp goals goals hobbies hobbies hobbies'
+      'intexp goals goals achievments achievments achievments'
+      'footer footer footer footer footer footer'
+  }
+  
+   .body-grid > div{
+     border-style: solid;
+     padding: 1px 30px 30px;
+     color: white;
+   }
+  
+  .intexp{
+    content-align:center;
+  }
+  
+  p{
+    text-indent: 5%;
+  }
